@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flight Tracker Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f172a;
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #1e293b;
+            padding: 20px;
+            border-bottom: 1px solid #334155;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #38bdf8;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .tracker-box {
+            width: 100%;
+            height: 700px;
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>✈️ Live Flight Tracker</h1>
+    </header>
+
+    <div class="container">
+        <div class="tracker-box">
+            <iframe src="https://www.flightradar24.com/simple-widget" title="Live Flight Map"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
